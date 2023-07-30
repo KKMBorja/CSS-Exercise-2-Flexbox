@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+
+.header{
+    text-align: center;
+    text-shadow: 3px 3px 5px #00bff4;
+    background-color: hwb(30 75% 22%);
+    padding: 32px;
+    color: #000000;
+    font-size: x-large;
+}
+
+
+/* FLEX-CONTAINER */
+.gallery{
+    background-image: url(../images/pexels-vlad-chețan-2892619.jpg);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+    
+}
+
+/* FLEX-ITEMS */
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
